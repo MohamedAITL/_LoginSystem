@@ -1,4 +1,6 @@
 const forms = document.querySelector(".forms"),
+    form1 = document.querySelector(".form.login"),
+    form2 = document.querySelector(".form.signup"),
     email1 = document.querySelector(".email1"),
     email2 = document.querySelector(".email2"),
     pwd1 = document.querySelector(".password"),
