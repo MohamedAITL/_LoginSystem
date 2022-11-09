@@ -18,14 +18,16 @@
                 <header>Login</header>
                 
 
-                <form action="#">
+                <form action="/" method="get">
                     <div class="field field-input">
-                        <input type="email" class="email" placeholder="Email">
+                        <input type="text" class="email1" placeholder="Email">
+                        <div class="error"></div>
                     </div>
 
                     <div class="field field-input">
                         <input type="password" class="password" placeholder="Password">
                         <i class='bx bx-hide eye-icon'></i>
+                        <div class="error"></div>
                     </div>
 
                     <div class="form-link">
@@ -33,7 +35,7 @@
                     </div>
 
                     <div class="field button-input">
-                        <button type="submit">Login</button> 
+                        <button type="submit" class="submit1">Login</button> 
                     </div>
 
                 </form>
@@ -65,21 +67,24 @@
                 <header>Signup</header>
                 
 
-                <form action="#">
+                <form action="/" method="get">
                     <div class="field field-input">
-                        <input type="email" class="email" placeholder="Email">
+                        <input type="text" class="email2" placeholder="Email">
+                        <div class="error"></div>
                     </div>
 
                     <div class="field field-input">
                         <input type="password" class="password" placeholder="Password">
+                        <div class="error"></div>
                     </div>
                     <div class="field field-input">
-                        <input type="password" class="password" placeholder="Password">
+                        <input type="password" class="password2" placeholder="Confirm Password">
                         <i class='bx bx-hide eye-icon'></i>
+                        <div class="error"></div>
                     </div>
 
                     <div class="field button-input">
-                        <button type="submit">Signup</button> 
+                        <button type="submit" class="submit2">Signup</button> 
                     </div>
 
                 </form>

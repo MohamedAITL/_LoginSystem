@@ -78,6 +78,19 @@ form{
     border-bottom-width: 2px;
 }
 
+.field.success input{
+    border-bottom-color: #09c372;
+}
+.field.error input{
+    border-bottom-color: #ff3860;
+}
+
+.field .error{
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
+
 .eye-icon{
     font-size: 18px;
     color: #8b8b8b;
