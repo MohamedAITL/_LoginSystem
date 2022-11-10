@@ -70,7 +70,7 @@ form{
 }
 
 .field input{
-    border: 1px solid #CACACA;
+    border: none;
     padding: 0 15px;
     outline: none;
 }
@@ -195,4 +195,62 @@ a.google span{
     color: #232836;
     font-weight: 500;
     opacity: .6;
+}
+
+
+
+/*Input Animation*/
+
+.field-input.animation{
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.field-input.animation input{
+    /* height: 100%; */
+    /* width: 100%; */
+    padding-top: 10px;
+    border: none;
+    outline: none;
+}
+
+.field-input.animation label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    color: #8b8b8b;
+    border-bottom: 1px solid #000;
+}
+.field-input.animation label::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: -1;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #4070f4;
+    transform: translateX(-100%);
+    transition: all .3s ease;
+}
+
+.content-name{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all .3s ease;
+}
+
+.field-input.animation input:focus + .label-name .content-name, .field-input.animation input:valid + .label-name .content-name{
+    transform: translateY(-120%);
+    font-size: 14px;
+    color: #4070f4;
+}
+
+.field-input.animation input:focus + .label-name::after, .field-input.animation input:valid + .label-name::after{
+    transform: translateX(0%);
+
 }
